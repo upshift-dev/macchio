@@ -29,9 +29,11 @@
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.1.26",
+    "@anthropic-ai/sdk": "^0.67.0",
     "@effect/cli": "^0.71.0",
     "@effect/platform-node": "^0.98.4",
-    "effect": "^3.10.3"
+    "effect": "^3.10.3",
+    "simple-git": "^3.28.0"
   },
   "packageManager": "pnpm@9.12.3",
   "engines": {

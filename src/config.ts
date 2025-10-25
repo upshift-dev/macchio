@@ -12,7 +12,6 @@ export class Config extends Effect.Service<Config>()("Config", {
   effect: Effect.gen(function* () {
     const workingDir = yield* getProcessEnvOrFail("DIR").pipe(Effect.either);
     const anthropicApiKey = yield* getProcessEnvOrFail("ANTHROPIC_API_KEY");
-    const githubToken = yield* getProcessEnvOrFail("GH_TOKEN");
 
     return {
       get: {
@@ -20,7 +19,6 @@ export class Config extends Effect.Service<Config>()("Config", {
           ? process.cwd()
           : path.resolve(workingDir.right),
         anthropicApiKey: Redacted.make(anthropicApiKey),
-        githubToken: Redacted.make(githubToken),
       },
     };
   }),
