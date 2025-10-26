@@ -1,6 +1,6 @@
 {
   "name": "macchio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a ralph 2.0 experiment",
   "type": "module",
   "main": "dist/index.js",
